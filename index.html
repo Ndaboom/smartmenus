@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartmenus test</title>
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Smartmenus -->
+    <link href="https://www.unpkg.com/smartmenus@^2.0.0-alpha.1/dist/css/smartmenus.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navbar 1 -->
+    <nav id="navbar1" class="sm-navbar">
+        <h1 class="sm-brand"><a href="#">Navbar 1</a></h1>
+
+        <span class="sm-toggler-state" id="sm-toggler-state-1"></span>
+        <div class="sm-toggler">
+            <a class="sm-toggler-anchor sm-toggler-anchor--show" href="#sm-toggler-state-1" role="button"
+                aria-label="Open main menu">
+                <span class="sm-toggler-icon sm-toggler-icon--show"></span>
+            </a>
+            <a class="sm-toggler-anchor sm-toggler-anchor--hide" href="#" role="button" aria-label="Close main menu">
+                <span class="sm-toggler-icon sm-toggler-icon--hide"></span>
+            </a>
+        </div>
+
+        <div class="sm-collapse">
+            <ul class="sm-nav sm-nav--center">
+                <li class="sm-nav-item"><a class="sm-nav-link" href="#">Link</a></li>
+                <li class="sm-nav-item"><a class="sm-nav-link" href="#">Link</a></li>
+                <li class="sm-nav-item">
+                    <a class="sm-nav-link sm-sub-toggler" href="#">Sub</a>
+                    <ul class="sm-sub">
+                        <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                        <li class="sm-sub-item">
+                            <a class="sm-sub-link sm-sub-toggler" href="#">Sub</a>
+                            <ul class="sm-sub">
+                                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                                <li class="sm-sub-item">
+                                    <a class="sm-sub-link sm-sub-toggler" href="#">Sub</a>
+                                    <ul class="sm-sub">
+                                        <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                                        <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                                        <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                            </ul>
+                        </li>
+                        <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                        <li class="sm-sub-item-separator"></li>
+                        <li class="sm-sub-item"><a class="sm-sub-link sm-disabled" href="#">Disabled</a></li>
+                    </ul>
+                </li>
+                <li class="sm-nav-item"><a class="sm-nav-link" href="#">Link</a></li>
+                <li class="sm-nav-item"><a class="sm-nav-link" href="#">Link</a></li>
+                <li class="sm-nav-item">
+                    <a class="sm-nav-link sm-nav-link--split" href="#">Link</a><button
+                        class="sm-nav-link sm-nav-link--split sm-sub-toggler" aria-label="Toggle sub menu"></button>
+                    <ul class="sm-sub">
+                        <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                        <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                        <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                        <li class="sm-sub-item-separator"></li>
+                        <li class="sm-sub-item">
+                            <a class="sm-sub-link sm-sub-link--split" href="#">Link</a><button
+                                class="sm-sub-link sm-sub-link--split sm-sub-toggler"
+                                aria-label="Toggle sub menu"></button>
+                            <ul class="sm-sub">
+                                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                                <li class="sm-sub-item-separator"></li>
+                                <li class="sm-sub-item">
+                                    <a class="sm-sub-link sm-sub-link--split" href="#">Link</a><button
+                                        class="sm-sub-link sm-sub-link--split sm-sub-toggler"
+                                        aria-label="Toggle sub menu"></button>
+                                    <ul class="sm-sub">
+                                        <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                                        <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                                        <li class="sm-sub-item-separator"></li>
+                                        <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sm-nav-item"><a class="sm-nav-link" href="#">Link</a></li>
+                <li class="sm-nav-item sm-nav-item--has-mega">
+                    <a class="sm-nav-link sm-sub-toggler" href="#">Mega</a>
+                    <div class="sm-sub sm-sub--mega">
+                        <div style="border: 1px dashed rgba(0, 0, 0, 0.2); padding: 1rem">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="dropdown-header">STGAubron Gaming Desktop PC</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><a href="#">Link 1</a></li>
+                                        <li class="list-group-item"><a href="#">Link 2</a></li>
+                                        <li class="list-group-item"><a href="#">Link 3</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="assets/images/gaming-pc.jpg" width="250" alt="Image description"
+                                        class="img-fluid mx-auto d-block p-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="sm-nav-item-separator"></li>
+                <li class="sm-nav-item"><a class="sm-nav-link sm-disabled" href="#">Disabled</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script src="https://www.unpkg.com/smartmenus@^2.0.0-alpha.1/dist/js/smartmenus.browser.min.js"></script>
+    <script src="assets/js/smartmenus-init.js"></script>
+    <script src="assets/css/bootstrap.min.js"></script>
+</body>
+
+</html>
